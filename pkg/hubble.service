@@ -4,9 +4,9 @@ Requires=network-online.target
 After=network-online.target
 
 [Service]
-Type=forking
-PIDFile=/var/run/hubble.pid
-ExecStart=/opt/hubble/hubble -d
+#Type=forking
+#PIDFile=/var/run/hubble.pid
+ExecStart=/opt/hubble/hubble
 Restart=always
 RestartSec=300
 MemoryAccounting=true
